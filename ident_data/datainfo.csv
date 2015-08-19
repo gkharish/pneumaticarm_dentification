@@ -1,0 +1,12 @@
+Name of the File,x_init,u_init,Step input,X-axis range low,X-axis range up,steadystate_x,Transfer function,State Space
+simwithinitpres1step,-0.02291,0.5,2,4300,6000,1.071,tfdelpinitpres1,statespace1
+simwithinitpres2step,0.1179,0.8,2,17000,20000,1.249,tfdelpinitpres2,statespace2
+simwithinitpres3step,0.2413,1,2,4000,6000,1.371,tfdelpinitres2,statespace2
+simwithinitpres4step,0.2949,1.1,2,2500,3100,1.43,tfdelpinitpres2,statespace2
+simwithinitpres4step1,0.292,1.1,1,1900,2300,0.8467,tfdelpinitpres41,statespace41
+simwithinitpres5step,0.355,1.2,1,5800,6700,0.901,tfdelpinitpres41,statespace41
+simwithinitpres6step1,0.4595,1.4,1,4700,5500,0.9828,tfdelpinitpres6,statespace6
+simwithinitpres7step1,0.4722,1.4,1,2300,3000,1.005,tfdelpinitpres7,statespace7
+simwithinitpres8step1,0.5331,1.5,1,2400,3200,1.054,tfdelpinitpres8,statespace8
+simwithinitpres9step1,0.7052,1.8,1,2100,2600,1.23,tfdelpinitpres9,statespace9
+simwithinitpres10step1,0.8322,2,1,8850,10000,1.352,tfdelpinitpres10,statespace10

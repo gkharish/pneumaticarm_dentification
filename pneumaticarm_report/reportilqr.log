@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.6)  17 AUG 2015 14:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.6)  20 AUG 2015 01:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -349,11 +349,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 554.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-LaTeX Warning: Citation `tondumuscle' on page 1 undefined on input line 565.
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
@@ -367,39 +363,40 @@ Package pdftex.def Info: identifiedmodel.jpg used on input line 596.
 (pdftex.def)             Requested size: 227.62204pt x 170.71764pt.
 
 
-LaTeX Warning: Reference `' on page 2 undefined on input line 609.
+LaTeX Warning: Reference `' on page 2 undefined on input line 624.
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 633.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 648.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-<ilqrresponse2.jpg, id=15, 540.0175pt x 411.5375pt>
+) [2 <./identifiedmodel.jpg>] <ilqrresponse2.jpg, id=24, 540.0175pt x 411.5375p
+t>
 File: ilqrresponse2.jpg Graphic file (type jpg)
- <use ilqrresponse2.jpg>
-Package pdftex.def Info: ilqrresponse2.jpg used on input line 654.
+
+<use ilqrresponse2.jpg>
+Package pdftex.def Info: ilqrresponse2.jpg used on input line 669.
 (pdftex.def)             Requested size: 227.62204pt x 173.46625pt.
 
-<ilqrphaseresponse2.jpg, id=16, 526.96875pt x 391.4625pt>
+<ilqrphaseresponse2.jpg, id=25, 526.96875pt x 391.4625pt>
 File: ilqrphaseresponse2.jpg Graphic file (type jpg)
 
 <use ilqrphaseresponse2.jpg>
-Package pdftex.def Info: ilqrphaseresponse2.jpg used on input line 660.
+Package pdftex.def Info: ilqrphaseresponse2.jpg used on input line 675.
 (pdftex.def)             Requested size: 227.62204pt x 169.09016pt.
- <ilqrresponse1.jpg, id=17, 562.1pt x 421.575pt>
+ <ilqrresponse1.jpg, id=26, 562.1pt x 421.575pt>
 File: ilqrresponse1.jpg Graphic file (type jpg)
 
 <use ilqrresponse1.jpg>
-Package pdftex.def Info: ilqrresponse1.jpg used on input line 668.
+Package pdftex.def Info: ilqrresponse1.jpg used on input line 683.
 (pdftex.def)             Requested size: 227.62204pt x 170.71764pt.
- <ilqrphaseresponse1.jpg, id=18, 562.1pt x 421.575pt>
+ <ilqrphaseresponse1.jpg, id=27, 562.1pt x 421.575pt>
 File: ilqrphaseresponse1.jpg Graphic file (type jpg)
 
 <use ilqrphaseresponse1.jpg>
-Package pdftex.def Info: ilqrphaseresponse1.jpg used on input line 674.
+Package pdftex.def Info: ilqrphaseresponse1.jpg used on input line 689.
 (pdftex.def)             Requested size: 227.62204pt x 170.71764pt.
- [2 <./identifiedmodel.jpg>]
-** WARNING: \IEEEbiography is locked out when in conference mode (line 761).
+
+** WARNING: \IEEEbiography is locked out when in conference mode (line 775).
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -421,11 +418,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3703 strings out of 493304
- 53482 string characters out of 6139872
- 123836 words of memory out of 5000000
- 7074 multiletter control sequences out of 15000+600000
- 45306 words of font info for 96 fonts, out of 8000000 for 9000
+ 3677 strings out of 493304
+ 53221 string characters out of 6139872
+ 123840 words of memory out of 5000000
+ 7059 multiletter control sequences out of 15000+600000
+ 38765 words of font info for 79 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
  38i,17n,24p,995b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -442,7 +439,7 @@ texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on reportilqr.pdf (3 pages, 322909 bytes).
+Output written on reportilqr.pdf (3 pages, 325646 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream

@@ -462,7 +462,7 @@ Mckibben Muscle, ILQR, non-linear control, Anthropomorphic Pneumatic arm.
 
 \section{Introduction}
 Pneumatic actuators based on Mckibben artificial muscle is known for their non-linearities and hence pose a great control challenge. The sources for non-linearities varies from  hysteresis, saturation and internal friction between fabrics. However, having inherent compliance and very high power to weight ratio have made us to chose it as a research platform for the study compliance control and exploiting this to perform explosive works like hammering or throwing balls. Modelling the non linearities and getting a good model for the joint actuated by artificial muscles is not an easy task. The aim of the paper is to demonstrate that ILQR is effective in controlling joint actuated by Artificial Mckibben muscle even in the absence of good non-linear mode by considering an approximate linear identified model. The proposed method is then compared to the more traditional non-linear control method adopted for controlling the mckibben muscles like sliding mode controller. 
-Introduction of the experimental setup and the dynamical model of our joint actuated by Mckibben muscles is presented in section II. Section III will describe the identified linear model which will be used as an approximation of the non-linear model. ILQR algorithm developd by Li and Todorov is presented in section IV. Application of ILQR on the Mckibben model is then explained. Experimental results and future work will be discussed in section V and VI.
+Introduction of the experimental setup and the dynamical model of our joint actuated by Mckibben muscles is presented in section II. Section III will describe the identified linear model which will be used as an approximation of the non-linear model. ILQR algorithm developd by Li and Todorov \cite{todorov} is presented in section IV. Application of ILQR on the Mckibben model is then explained. Experimental results and future work will be discussed in section V and VI.
 
 
 % needed in second column of first page if using \IEEEpubid
@@ -603,6 +603,21 @@ The muscles are first initialised with some pressure before sending a step comma
 \begin{equation}
  \theta(s) = H(s)* (\delta P(s))
 \end{equation}
+
+The experiment is repeated at several operating point $(x_{i}, u_{i})$. At each operating point both the muscles is initialized with some pressure, however, sum of the pressure in muscle1 and muscle2 is kept constant at 4.2 bar which is just below the maximum capacity of our intensity pressure converter. We have adopted a transfer function model to find a linear model at every operating point. In order to fit to a transfer function model, which assumes zero initial state conditions, input-output data pair is created by offsetting the initial values at $t=0$. 
+ \begin{equation}
+ output(t) = x_{i}(t) - x_{i}(0); 
+ input(t) = u_{i}(t) - u_{i}(0)
+\end{equation}
+This $input output$ time domain data pair is used in identification toolbox to find a transfer function of linear model. To simulate the identified model response  and compare with the real system response, lsim function in matlab is used as follows:
+\begin{equation}
+Ir_{i}(t) = x_{i}(0) + lsim(Imodel_{i},input(t), output(t); 
+\end{equation}
+Where, $Ir$ is the identified response of the identified model $I_{model}$ at $i$ operating point.
+
+
+In this way, we have a linear identified model at each operating point. In our experiments we have ten operating points. It is observed that for lower initial pressure, the system behaves linear since one single transfer function is able to fit the system response at several operating points. However, at higher initial pressure the system seems to be strictly non-linear. 
+
 \subsection{Iterative Linear Quadratic Regulator (iLQR)}\label{subsec:ilqr}
 
 
@@ -740,11 +755,10 @@ The authors would like to thank...
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
 \begin{thebibliography}{1}
-
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-
+\bibitem{todorov}
+L. WeiWei, E.Todorov, ""
+\bibitem{tondumuscle}
+B.Tondu, S. Ippolito, J. Guiochet, "A Seven-degrees-of-freedom Robot-arm Driven by Pneumatic Artificial Muscles for Humanoid Robots," The International Journal of Robotics Research Vol. 24, No. 4, April 2005, pp. 257-274
 \end{thebibliography}
 
 % biography section
